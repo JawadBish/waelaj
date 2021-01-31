@@ -1,0 +1,70 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+  
+}
+
+
+
+
+:root {
+    --ff-primary: 'Purple Purse', cursive; 
+    --ff-secondary: 'Cairo', sans-serif;
+    --ff-third: 'Aref Ruqaa', serif;
+    --ff-main : 'Finger Paint', cursive;
+
+    --background-color : #130E12;
+    --color-red-WAJ : #FD4904;
+    --color-blue-WAJ : #02C2FF;
+
+    --clr-light: #fff;
+    --clr-dark: #002F56 ;
+    --clr-accent: #003D77;
+    --clr-less: #3880C5;
+
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+    --bss: 1em 1em 1em black;
+    margin-top: 40px;
+}
+
+
+@media (min-width: 900px) {
+    :root {
+     --fs-h1: 4.5rem;
+     --fs-h2: 3.75rem;
+     --fs-h3: 1.5rem;
+     --fs-body: 1.125rem;  
+    } 
+ }
+ 
+ .intro-main {
+     margin-top: 30px;
+     padding: 0;
+      display: grid;
+      grid-gap: 20px;
+ }
+ 
+ /* General Styles */
+ body {
+  background: var(--background-color);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fw-bold);
+  line-height: 1.6;
+  align-content: center;
+  text-align: center;
+
+ }
+
+

@@ -3,28 +3,16 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 import {Container} from '../globalStyles';
 
-/* 
-
-/*   
-    --clr-light: #fff;
-    --clr-dark: #002F56 ; 538D22
-    --clr-accent: #003D77;
-    --clr-less: #3880C5;
-
-    */
 
 export const Nav = styled.nav`
-background-color: white;
-box-shadow: 20px 20px 40px white;
-  height: 90px;
- display: flex;
- justify-content: center;
- align-items: center;
- /* font-size: 1.2rem; */
- position: sticky;
- top: 0;
+background-color: #130E12;
+height: 90px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: sticky;
+top: 15px;
  z-index: 5;
-
 @media screen and (max-width:1170px) {
   transition:0.8s all ease;
 }
@@ -32,16 +20,13 @@ box-shadow: 20px 20px 40px white;
 
 export const NavbarContainer = styled(Container)`
 display: flex;
-justify-content: space-between;
-height: 5;
-background-color: white;
-/* box-shadow: 12px 10px 10px rgba(37, 34, 34, 0.733); */
+justify-content: space-around;
+background-color:  #130E12;
 ${Container}
 `;
 
 export const Logo = styled(Link)`
-font-family: 'Aref Ruqaa', serif;
-  color: #1A4301;
+font-family: 'Finger Paint', cursive;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -54,7 +39,13 @@ font-family: 'Aref Ruqaa', serif;
 `;
 
 export const Img = styled.img`
+  width:300px;
+  `;
+
+
+export const ImgEnd = styled.img`
   max-width:300px;
+  height: 120px;
   `;
 
 
@@ -77,8 +68,10 @@ export const Burger = styled.div`
 export const Menu = styled.ul`
   display: flex;
   align-items: center;
+  justify-content: start;
+  margin-top : 20px;
   list-style: none;
-  text-align: center;
+
 
   @media screen and (max-width: 1170px) {
     display: flex;
@@ -90,7 +83,7 @@ export const Menu = styled.ul`
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background: white;
+    background: #130E12;
   }
 `;
 
@@ -100,7 +93,7 @@ export const Item = styled.li`
  
 
   &:hover {
-      border-bottom: 2px solid #002F56; 
+      border-bottom: 2px solid white; 
   }
 
   @media screen and (max-width: 1170px) {
@@ -124,7 +117,7 @@ export const ItemBtn = styled.li`
 
 export const NavLinks = styled(Link)`
  font-family: 'Cairo', sans-serif;
-  color: #002F56;
+  color: white;
   display: flex;
   font-size: 18px;
   font-weight:bold;
@@ -142,8 +135,7 @@ export const NavLinks = styled(Link)`
     display: table;
 
     &:hover {
-      color: white;
-      text-shadow : 2px 2px #1A4301;
+      text-shadow : 2px 2px white;
       transition: all 0.5s ease;
     }
   }
@@ -152,12 +144,11 @@ export const NavLinks = styled(Link)`
 
 
 export const NavLinksA = styled.a`
- font-family: 'Cairo', sans-serif;
-  color: #002F56;
+ font-family: 'Finger Paint', cursive;
+  color: white;
   display: flex;
   font-size: 18px;
   font-weight:bold;
-  text-shadow : 1px 1px #1A4301;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -172,26 +163,10 @@ export const NavLinksA = styled.a`
 
     &:hover {
       color: white;
-      text-shadow : 2px 2px #1A4301;
       transition: all 0.5s ease;
     }
   }
 `;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export const BtnLink = styled(Link)`
   display: flex;
@@ -205,60 +180,3 @@ export const BtnLink = styled(Link)`
   outline: none;
 `;
 
-export const BtnLogout = styled.button`
-  border-radius: 22px;
-  border : 1px solid #002F56;
-  background-color: white;
-  color: #002F56;
-  text-shadow : 1px 1px #1A4301;
-  font-family: 'Cairo', sans-serif;
-  white-space: nowrap;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  font-weight : bold;
-
-  transition-duration: 0.4s;
-  cursor: pointer;
-
-  &:hover {
-    transition: all 0.3s ease-out;
-    color: white;
-    background-color: #002F56;
-  }
-
-  @media screen and (max-width: 1170px) {
-    width: 100%;
-  }
-`;
-
-export const NavButton = styled.button`
-  border-radius: 22px;
-  border : 1px solid #002F56;
-  background-color: white;
-  color: #002F56;
-  text-shadow : 1px 1px #1A4301;
-  font-family: 'Cairo', sans-serif;
-  white-space: nowrap;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  font-weight : bold;
-
-  transition-duration: 0.4s;
-  cursor: pointer;
-
-  &:hover {
-    transition: all 0.3s ease-out;
-    color: white;
-    background-color: #002F56;
-  }
-
-  @media screen and (max-width: 1170px) {
-    width: 100%;
-  }
-`;

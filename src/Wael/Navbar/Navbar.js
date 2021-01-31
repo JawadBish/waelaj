@@ -8,10 +8,11 @@ Burger,
 Menu,
 Item,
 NavLinksA,
+ImgEnd,
 Img
-// NavLinks,
 } from './NavbarElements';
-import logoblue from '../Imgs/logoWAJ1.jpg'
+import logo from '../Imgs/logoWAJ1.jpg'
+import logoEnd from '../Imgs/portologo.jpg'
 
 const Navbar = () => {
     const [click, setClick]= useState(false);
@@ -23,23 +24,20 @@ const Navbar = () => {
         <IconContext.Provider value={{color: 'white'}}>
          <Nav>
         <NavbarContainer>
-       <Logo to="/">
-        <Img src={logoblue} alt="my imgs"/>
+       {/* <Logo to="#home">
+        <Img src={logo} alt="my imgs"/>
         </Logo>
-     
+      */}
            
        
        <Burger onClick={handleClick}> 
            {click ? <FaTimes size={20} color="#003D77"/> : <FaBars size={20} color="#003D77" />}
        </Burger>
        <Menu onClick={handleClick} click={click}>
+
+       <ImgEnd src={logoEnd} alt="end nav"/>
            <Item>
                <NavLinksA href="#home" >Home</NavLinksA>
-           </Item>
-       
-           <Item>
-
-               <NavLinksA href='#services'>Services</NavLinksA>
            </Item>
 
            <Item>
@@ -47,8 +45,18 @@ const Navbar = () => {
            </Item>
 
            <Item>
-               <NavLinksA href='#work'>Certifications</NavLinksA>
+               <NavLinksA href='#gallery'>Gallery</NavLinksA>
            </Item>
+
+           <Item>
+               <NavLinksA href='#services'>Services</NavLinksA>
+           </Item>
+           <Item>
+               <NavLinksA href='#contact'>Contact</NavLinksA>
+           </Item>
+
+         
+
            </Menu>
         </NavbarContainer>
         </Nav>

@@ -3,10 +3,20 @@ import './wael.css'
 
 
 
+
 const Wael = () => {
   return (
     <div className="intro-main">
-    <h1> Hello There</h1>
+   <body>
+   {/* Introduction */}
+   <section className="intro" id="home">
+         
+        </section>
+
+
+
+
+   </body>
     </div>
 
   )
