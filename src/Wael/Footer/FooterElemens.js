@@ -11,7 +11,7 @@ import styled from 'styled-components';
     */
 
 export const FooterContainer = styled.div`
-  background-color: #002F56;
+  background-color: #130E12;
   display: flex;
   height: 100%;
   flex-direction: row;
@@ -58,11 +58,12 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   color: white;
-  font-size: 24px;
+  font-size: 35px;
 
 :hover {
-  color:#3880C5;
+  color: #02C2FF;
   transition: all 0.3s ease-out;
+
 }  
 `;
 
