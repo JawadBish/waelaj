@@ -36,7 +36,7 @@
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 600px) {
     :root {
      --fs-h1: 4.5rem;
      --fs-h2: 3.75rem;
@@ -65,34 +65,45 @@
  }
 
 
-.intro {
+.intro-home {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "img header"
-    "img subtitle"
-    "text text";
+    margin-top: 20px;
+    align-content: center;
+    justify-content: center;
 }
 
-.intro-img,.intro-header,.intro-text,.intro-subtitle {
-    height: 100px;
+.intro-home h1 {
+    font-size:  var(--fs-h2);
+    font-family: var(--ff-main);
+    color: white;
+    font-weight: bolder;
 }
-.intro-img {
-    grid-area : img;
-    background-color: pink;
+
+.intro-home p{
+    text-align: start;
+    font-size:  var(--fs-h4);
+    font-family: var(--ff-third);
+    color: var(--color-red-WAJ);
+    font-weight: bolder;
 }
-.intro-header{
-    grid-area : header;
-    background-color: green;
+
+@media screen and (max-width: 560px) {
+    .intro-home {
+        align-content: center;
+        justify-content: center;  
+    }
+    .intro-home img {
+        max-width: 80%;
+        margin-left: 20px;
+    }
+    .intro-home h1 {
+        font-size:  var(--fs-h4);
+    }
+    .intro-home p{
+        text-align: center;
+        font-size:  var(--fs-h4);
+    }
 }
-.intro-subtitle { 
-    grid-area : subtitle;
-    background-color: red;
-}
-.intro-text{ 
-    grid-area : text;
-    background-color: blue;
-}
+
 
 
