@@ -41,9 +41,6 @@ const Navbar = () => {
                <NavLinksA href="#home" >Home</NavLinksA>
            </Item>
 
-           <Item>
-               <NavLinksA href='#about'>About Me</NavLinksA>
-           </Item>
 
            <Item>
                <NavLinksA href='#gallery'>Gallery</NavLinksA>

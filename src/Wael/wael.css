@@ -65,6 +65,13 @@
  }
 
 
+ h1 {
+    font-size:  var(--fs-h2);
+    font-family: var(--ff-main);
+    color: white;
+    font-weight: bolder;
+ }
+
 .intro-home {
     display: grid;
     margin-top: 20px;
@@ -72,12 +79,7 @@
     justify-content: center;
 }
 
-.intro-home h1 {
-    font-size:  var(--fs-h2);
-    font-family: var(--ff-main);
-    color: white;
-    font-weight: bolder;
-}
+
 
 .intro-home p{
     text-align: start;
@@ -86,6 +88,56 @@
     color: var(--color-red-WAJ);
     font-weight: bolder;
 }
+
+
+
+.my-work-dd {
+    margin-top: 70px;
+}
+
+.my-work {
+    display:grid;   
+    grid-gap: 20px;
+  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+.oneWork {
+    background:var(--background-color);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border: 2px solid white ;
+    border-radius: 20%;
+    margin : 20px;
+
+}
+.oneWork h3 {
+   color:#02C2FF;
+    font-family: var(--ff-primary)
+}
+.oneWork p {
+    color: white;
+    font-family: var(--ff-secondary)
+}
+
+.oneWork a {
+    color : red;
+    text-decoration: none;
+}
+
+.oneWork a:hover {
+    border-bottom: 2px solid white;
+}
+
+
+
+
 
 @media screen and (max-width: 560px) {
     .intro-home {
