@@ -3,11 +3,9 @@
 *::before,
 *::after{
     box-sizing: border-box;
-  
+    margin:0;
+    padding: 0;
 }
-
-
-
 
 :root {
     --ff-primary: 'Purple Purse', cursive; 
@@ -48,7 +46,7 @@
  }
  
  .intro-main {
-     margin-top: 30px;
+     margin-top: 20px;
      padding: 0;
       display: grid;
       grid-gap: 20px;
@@ -64,7 +62,37 @@
   line-height: 1.6;
   align-content: center;
   text-align: center;
-
  }
+
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img header"
+    "img subtitle"
+    "text text";
+}
+
+.intro-img,.intro-header,.intro-text,.intro-subtitle {
+    height: 100px;
+}
+.intro-img {
+    grid-area : img;
+    background-color: pink;
+}
+.intro-header{
+    grid-area : header;
+    background-color: green;
+}
+.intro-subtitle { 
+    grid-area : subtitle;
+    background-color: red;
+}
+.intro-text{ 
+    grid-area : text;
+    background-color: blue;
+}
 
 

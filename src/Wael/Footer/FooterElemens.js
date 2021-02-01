@@ -42,7 +42,7 @@ export const SocialMediaWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+
   max-width: 1000px;
   margin: 10px auto 0 auto;
 `;

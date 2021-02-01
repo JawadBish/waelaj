@@ -1,7 +1,15 @@
 import styled from 'styled-components'
 
 import { Link } from 'react-router-dom';
-import {Container} from '../globalStyles';
+
+
+
+
+export const Container = styled.div`
+  z-index: 1;
+  @media screen and (max-width: 600px) {
+  }
+`;
 
 
 export const Nav = styled.nav`
@@ -11,17 +19,16 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: sticky;
-top: 15px;
  z-index: 5;
 @media screen and (max-width:1170px) {
   transition:0.8s all ease;
 }
 `;
-
 export const NavbarContainer = styled(Container)`
 display: flex;
 justify-content: space-around;
 background-color:  #130E12;
+width : 100%;
 ${Container}
 `;
 
@@ -38,13 +45,10 @@ font-family: 'Finger Paint', cursive;
   }
 `;
 
-export const Img = styled.img`
-  width:300px;
-  `;
 
 
 export const ImgEnd = styled.img`
-  max-width:300px;
+  width : 120px;
   height: 120px;
   `;
 
@@ -69,26 +73,25 @@ export const Menu = styled.ul`
   display: flex;
   align-items: center;
   justify-content: start;
-  margin-top : 20px;
   list-style: none;
 
 
   @media screen and (max-width: 1170px) {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 95vh;
     position: absolute;
-    top: 80px;
+    top: 70px;     
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
+    width : 100%;
     transition: all 0.5s ease;
     background: #130E12;
+    
   }
 `;
 
 export const Item = styled.li`
-  height: 80px;
   border-bottom: 3px solid transparent;
  
 
@@ -97,7 +100,7 @@ export const Item = styled.li`
   }
 
   @media screen and (max-width: 1170px) {
-    width: 100%;
+  
 
     &:hover {
       border: none;
@@ -110,7 +113,7 @@ export const ItemBtn = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+
     height: 120px;
   }
 `;
@@ -131,7 +134,7 @@ export const NavLinks = styled(Link)`
     text-align: center;
     padding: 2rem;
     font-size: 1.4rem;
-    width: 100%;
+   
     display: table;
 
     &:hover {
@@ -158,7 +161,7 @@ export const NavLinksA = styled.a`
     text-align: center;
     padding: 2rem;
     font-size: 1.4rem;
-    width: 100%;
+    
     display: table;
 
     &:hover {
@@ -175,7 +178,7 @@ export const BtnLink = styled(Link)`
   text-decoration: none;
   padding: 8px 16px;
   height: 100%;
-  width: 100%;
+
   border: none;
   outline: none;
 `;

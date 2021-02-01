@@ -31,7 +31,7 @@ const Navbar = () => {
            
        
        <Burger onClick={handleClick}> 
-           {click ? <FaTimes size={20} color="#003D77"/> : <FaBars size={20} color="#003D77" />}
+           {click ? <FaTimes size={40} color="white"/> : <FaBars size={40} color="white" />}
        </Burger>
        <Menu onClick={handleClick} click={click}>
 
