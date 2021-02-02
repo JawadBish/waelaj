@@ -22,7 +22,7 @@ export const FooterContainer = styled.div`
   /* border: 1px ridge #1A4301; */
   margin-top: 3px;
   @media screen and (max-width: 380px) {
-    display: none;
+ 
     
   }
 `;
@@ -42,7 +42,6 @@ export const SocialMediaWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   max-width: 1000px;
   margin: 10px auto 0 auto;
 `;

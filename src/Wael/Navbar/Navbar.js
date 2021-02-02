@@ -7,7 +7,7 @@ Logo,
 Burger,
 Menu,
 Item,
-NavLinksA,
+NavLinks,
 ImgEnd,
 Img
 } from './NavbarElements';
@@ -38,19 +38,19 @@ const Navbar = () => {
 
        <ImgEnd src={logoEnd} alt="end nav"/>
            <Item>
-               <NavLinksA href="#home" >Home</NavLinksA>
+               <NavLinks to="/" >Home</NavLinks>
            </Item>
 
 
            <Item>
-               <NavLinksA href='#gallery'>Gallery</NavLinksA>
+               <NavLinks to='/gallery'>Gallery</NavLinks>
            </Item>
 
            <Item>
-               <NavLinksA href='#services'>Services</NavLinksA>
+               <NavLinks to='/services'>Services</NavLinks>
            </Item>
            <Item>
-               <NavLinksA href='#contact'>Contact</NavLinksA>
+               <NavLinks to='/contact'>Contact</NavLinks>
            </Item>
 
          
